@@ -21,6 +21,16 @@ header{
     padding: 1rem;
 }
 
+.logo-header{
+    height: 100%;
+    display: flex;
+}
+
+img{
+    width: 40px;
+    margin-right: 10px;
+}
+
 #btn-generator{
     padding: 0 15px;
     margin-left: 10px;
