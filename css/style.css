@@ -1,0 +1,86 @@
+/* ----------
+    RESET
+------------ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+}
+
+#btn-generator{
+    padding: 0 15px;
+    margin-left: 10px;
+}
+
+.btn-header{
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background-color: #7fffd4;
+    flex-grow: 1;
+    display: flex;
+}
+
+footer{
+    background-color: white;
+    padding: 1rem;
+}
+
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-color: #7fffd4;
+}
+
+.board__number{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.lightblue{
+    background-color: rgb(38, 99, 212);
+}
+
+/* difficoltà-select */
+.medium-level{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.easy-level{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 25px; 
+}
+
+label{
+    margin-right: 5px;
+}
