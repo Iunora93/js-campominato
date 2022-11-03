@@ -1,21 +1,19 @@
 `use strict`
 const btnGenerator = document.getElementById("btn-generator");
 const boardContainer = document.querySelector(".board");
-
-
+const cpuNumber = getRndInteger(1, 100);
+console.log(cpuNumber, 'Numero CPU');
+    function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;     
+    }
+    
 btnGenerator.addEventListener('click', function(){
     const level = document.getElementById("difficolta").value;
     if(level === "hard"){
         boardContainer.innerHTML = "";
         for( let i = 1; i <= 100; i++){
             const boardCell = document.createElement("div");
-            boardCell.innerHTML = i;
-            const cpuNumber = getRndInteger(1, 16);
-            console.log(cpuNumber, 'Numero CPU');
-            function getRndInteger(min, max) {
-                return Math.floor(Math.random() * (max - min + 1) ) + min; 
-                
-            }
+            boardCell.innerHTML = i;          
             boardCell.classList.add("board__number");
             boardCell.addEventListener("click", function(){
                 console.log(this.innerHTML, 'Numero giocatore');
