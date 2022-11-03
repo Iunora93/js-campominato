@@ -8,7 +8,7 @@ let pointsDown = document.getElementById("points");
     function getRndInteger(min, numCell) {
         bombs = [];
         let bombNumber = 0;
-        while(bombs.length < 1){
+        while(bombs.length < 16){
          bombNumber = Math.floor(Math.random() * (numCell - min + 1) ) + min; 
          if(!(bombs.includes(bombNumber))){
             bombs.push(bombNumber);
