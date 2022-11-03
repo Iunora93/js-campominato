@@ -43,3 +43,15 @@ btnGenerator.addEventListener('click', function(){
     }
     }
 })
+
+/* Creo un numero minimo e massimo della cpu */
+const cpuNumber = getRndInteger(1, 16);
+console.log(cpuNumber)
+/* Genero un numero rabdom della cpu da 1 a 16 */
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+    if(cpuNumber === "lightblue"){
+        boardCell.classList.add("red");
+        alert("Hai perso");
+    }
+}
